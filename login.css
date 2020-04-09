@@ -1,0 +1,78 @@
+@charset "utf-8";
+*{padding:0;
+margin:0;
+}
+
+html{height:100%;}
+body{height:100%;}
+
+.whole{
+	height:100%;
+	background-image:linear-gradient(to right,#a6c0fe,#f68084);/*渐变函数（新知识）*/
+	}
+	
+.login-wrapper{
+	width:400px;
+	height:450px;
+	background-color:#FFF;
+	position:relative;/*块元素的浮动*/
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);/*定义2D转换*/
+	border:2px solid #666;
+	border-radius:10px;/*给边框一个圆角*/
+	padding:0 20px;/*就是这个块的边框离内容距离，两个值对应上下填充，左右填充*/
+	}
+	
+.login-wrapper .header{
+	font-size:35px;
+	text-align:center;
+	font-family:Verdana, Geneva, sans-serif;
+	letter-spacing:.05em;/*em是一个单位，可以随着用户字体改变而改变，px是像素，固定死了，letter-spacing是设定字体间距*/
+	line-height:100px;/*行高*/
+	
+	}/*两个选择器写一起得空格蛤蛤蛤*/
+.login-wrapper .text{}
+.login-wrapper .text .username{
+	display:block;
+	width:100%;
+	height:25px;
+	margin-bottom:20px;
+	padding:10px 0;
+	border:0;
+	border-bottom:2px solid #666;
+	font-size:20px;
+	
+	}
+.login-wrapper .text .password{
+	display:block;
+	width:100%;
+	height:25px;
+	margin-bottom:20px;
+	padding:10px 0;
+	border:0;
+	border-bottom:2px solid #666;
+	font-size:20px;
+	}
+.login-wrapper .button{
+	text-align:center;
+	letter-spacing:.05em;
+	margin-bottom:10px;
+	background-image:linear-gradient(to right,#d299c2,#fef9d7);
+	width:100%;
+	padding:10px 0;
+	height:20px;
+	border:1px solid #999;
+	border-radius:3px;
+	margin-top:50px;
+	font-size:20px;
+	}
+.login-wrapper .no{
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align:center;
+	line-height:100px;
+	}
+	
+.login-wrapper .no a{text-decoration:none;
+
+}
